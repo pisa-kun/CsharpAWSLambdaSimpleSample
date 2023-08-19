@@ -4,7 +4,8 @@ using System.Net;
 using System.Text.Json;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
-[assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
+// nuget install Amazon.Lambda.Serialization.Json
+[assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.Json.JsonSerializer))]
 
 namespace AWSLambdaSimpleSample;
 
@@ -21,7 +22,7 @@ public class Function
     {
         var body = new Dictionary<string, string>()
         {
-            {"message", "Hello, World!" },
+            {"message", "Hello, World" },
         };
 
         var response = new LambdaResponse()
