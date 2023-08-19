@@ -16,7 +16,7 @@
     "function-handler"      : "AWSLambdaSimpleSample::AWSLambdaSimpleSample.Function::FunctionHandler",
     "framework"             : "net6.0",
     "function-name"         : "AWSLambdaSimpleSample",
-    "function-description"  : "AWSLambdaSimpleSampleのテストスクリプト",
+    "function-description"  : "AWSLambdaSimpleSample test code",
     "package-type"          : "Zip",
     "function-role"         : "arn:aws:iam::674172895730:role/lambda_exec_AWSLambdaSimpleSample",
     "function-subnets"      : "",
